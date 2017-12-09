@@ -16,7 +16,7 @@ class review (
     file { '/tmp/lakal':
         ensure  => 'present',
         mode    => '0660',
-        source => 'puppet:///site/review/test_file.txt',
+        source => 'puppet:///modules/review/test_file.txt',
         }
  }
    
