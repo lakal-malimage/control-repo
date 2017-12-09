@@ -1,0 +1,6 @@
+## test template
+
+NAME = <%= $name %>
+AGE = <%= $age %>
+
+HOSTNAME = <%= $facts[fqdn] %>
