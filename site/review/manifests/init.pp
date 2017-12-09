@@ -1,9 +1,9 @@
 class review (
-    String $user = undef,
+    String $user = 'undef',
 ) {
     $homedir = $user ? {
-      'root' => '/root',
-      defautl => "/home/${user}",
+        'root' => '/root',
+        default => "/home/${user}",
     }
     
     user { "$user": 
