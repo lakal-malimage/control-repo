@@ -18,6 +18,12 @@ class review (
         mode    => '0660',
         source => 'puppet:///modules/review/test_file.txt',
         }
+        
+    file { '/tmp/lakal2':
+        ensure  => 'present',
+        mode    => '0660',
+        content => epp ( 'review/templ' , { 'name' => 'lakal' , 'age' => '18' } ),
+        }
  }
    
     
