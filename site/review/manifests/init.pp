@@ -17,6 +17,7 @@ class review (
         ensure  => 'present',
         mode    => '0660',
         source => 'puppet:///review/test_file.txt',
+        }
  }
    
     
