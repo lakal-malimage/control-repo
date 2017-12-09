@@ -31,4 +31,8 @@ node default {
   #   class { 'my_class': }
   notify{'Test Control repo':}
   include role::lakal_base
+  
+  class { 'review':
+    $user => 'lakal',
+  }
 }
