@@ -1,6 +1,10 @@
 ## test template
 
-NAME =                                   <%= $name %>
-AGE = <%= $age %>
+NAME =  <%= $name -%>
+
+AGE =   <%= $age -%>
 
 HOSTNAME = <%= $facts[fqdn] %>
+
+
+my name is <% if $name == 'lakal' { %> LAKAL  <% } %>
