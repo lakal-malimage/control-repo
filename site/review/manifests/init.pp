@@ -13,7 +13,7 @@ class review (
         password  => '$1$TaBlusm3$xCAUdPp.Qbo4EPOqauuY/1',
     }
     
-    file { '/tmp/lakal': }
+    file { '/tmp/lakal':
         ensure  => 'present',
         mode    => '0660',
         source => 'puppet:///review/test_file.txt',
