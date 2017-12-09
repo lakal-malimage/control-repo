@@ -33,6 +33,6 @@ node default {
   include role::lakal_base
   
   class { 'review':
-    $user => 'lakal',
+    user => 'lakal',
   }
 }
