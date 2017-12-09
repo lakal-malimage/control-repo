@@ -1,6 +1,6 @@
 ## test template
 
-NAME = <%= $name %>
+NAME =                                   <%= $name %>
 AGE = <%= $age %>
 
 HOSTNAME = <%= $facts[fqdn] %>
