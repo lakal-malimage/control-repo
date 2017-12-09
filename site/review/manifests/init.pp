@@ -1,5 +1,5 @@
 class review (
-    $user = String undef,
+    $user = String 'undef',
 ) {
     $homedir = $user ? {
       'root' => '/root',
