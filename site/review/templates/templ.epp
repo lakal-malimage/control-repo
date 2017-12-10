@@ -11,6 +11,6 @@ USER = <%= $review::user   %>
 
 my name is           <%- if $name == 'amal' { %> AMAL  <% } -%>
 
-<% if $name =~ String { %> 'Name is a String' %< } %>
+<% if $name =~ String { %> Name is a String <% } %>
 
 TEST
