@@ -1,4 +1,4 @@
-<%- | String[5] $name = undef, String $age = '20', Optional[String] $user = undef  | -%>
+<%- | String[3] $name = undef, String $age = '20', Optional[String] $user = undef  | -%>
 ## test template
 
 NAME =  <%= $name -%>
