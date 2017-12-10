@@ -22,7 +22,7 @@ class review (
     file { '/tmp/lakal2':
         ensure  => 'present',
         mode    => '0660',
-        content => epp( 'review/templ' , { 'name' => 'amal' , 'age' => '18' } ),
+        content => epp( 'review/templ' , { 'name' => 'amal' } ),
         }
  }
    
