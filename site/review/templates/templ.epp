@@ -1,3 +1,5 @@
+[root@master templates]# cat templ.epp 
+<%- | String $name = undef, String $age = '20', Optional[String] $user = undef  | -%>
 ## test template
 
 NAME =  <%= $name -%>
@@ -6,5 +8,8 @@ AGE =   <%= $age -%>
 
 HOSTNAME = <%= $facts[fqdn] %>
 
+USER = <%= $review::user   %>
 
-my name is <% if $name == 'lakal' { %> LAKAL  <% } %>
+my name is           <%- if $name == 'amal' { %> AMAL  <% } -%>
+
+TEST
