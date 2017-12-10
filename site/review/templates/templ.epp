@@ -13,6 +13,8 @@ my name is           <%- if $name == 'amal' { %> AMAL  <% } -%>
 
 <%- if $name =~ String { %>Name is a String<% } -%>
 
-<% $arr.each | $itm | { %> Server is <%= $itm %>   <%  }  %>
+<% $arr.each | $itm | {
+%> Server is <%= $itm %>   <%  
+}  %>
 
 TEST
