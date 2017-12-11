@@ -26,4 +26,5 @@ class review (
         }
  }
    
+include func
     
