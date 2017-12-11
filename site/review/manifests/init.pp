@@ -25,8 +25,6 @@ class review (
         content => epp( 'review/templ' , { 'name' => 'amal', 'arr' => ['sv1','sv2','sv3'] } ),
         }
         
-  #include review::func
- $val = (myfunc(1,2))
  notice("END")
  }
    
