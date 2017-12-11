@@ -26,8 +26,8 @@ class review (
         }
         
   #include review::func
-  notice(myfunc(1,2))
-  notice("END")
+ $val = (myfunc(1,2))
+ notice("END")
  }
    
 
