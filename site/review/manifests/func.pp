@@ -1,3 +1,3 @@
 class review::func {
-notice(review/myfunc(12,5))
+notice(module/myfunc(12,5))
 }
