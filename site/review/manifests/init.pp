@@ -25,7 +25,7 @@ class review (
         content => epp( 'review/templ' , { 'name' => 'amal', 'arr' => ['sv1','sv2','sv3'] } ),
         }
         
-  include func
+  include review::func
   notice("END")
  }
    
