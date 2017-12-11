@@ -24,7 +24,10 @@ class review (
         mode    => '0660',
         content => epp( 'review/templ' , { 'name' => 'amal', 'arr' => ['sv1','sv2','sv3'] } ),
         }
+        
+  include func
+  notice("END")
  }
    
-include func
+
     
