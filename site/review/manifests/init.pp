@@ -26,7 +26,7 @@ class review (
         }
         
 include review::func
-notice("END")
+notify {"END":}
  
  }
  
