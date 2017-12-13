@@ -1,4 +1,4 @@
-function puppet::lak( Variant[String,Numeric,Boolean] $inputvalue ) {
+function review2::lak( Variant[String,Numeric,Boolean] $inputvalue ) {
   case $inputvalue {
     Undef:   { false }
     Boolean: { $inputvalue }
