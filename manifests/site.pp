@@ -32,7 +32,7 @@ node default {
   notify{'Test Control repo':}
   include role::lakal_base
   
-  class { 'review':
-    user => 'lakal',
+  class { 'review2':
+    user => 'lakal2',
   }
 }
