@@ -1,3 +1,4 @@
 class review::func {
-notice(review/myfunc(12,5))
+$t = myfunc(12,10)
+notice("$t")
 }
