@@ -1,4 +1,4 @@
 class review2::func {
-$t = myfunc(12,10)
+$t = lak(12,10)
 notify {"$t":}
 }
