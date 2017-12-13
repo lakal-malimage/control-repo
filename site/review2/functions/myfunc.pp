@@ -1,4 +1,4 @@
-function review2::myfunc (
+function puppet::myfunc (
   Integer num1,
   Integer num2,
 ) {
