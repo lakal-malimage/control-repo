@@ -25,14 +25,20 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+node agent.localdomain {
+  @@host { $::fqdn:
+  ensure => 'present',
+  host_aliases => [$::hostname],
+  ip => $::ipaddress,
+  tag => 'classroom',
+}
+
+}
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
   notify{'Test Control repo':}
   include role::lakal_base
-  
-  class { 'review2':
-    user => 'lakal2',
-  }
+   
 }
