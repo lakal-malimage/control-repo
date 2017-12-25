@@ -31,6 +31,7 @@ node agent.localdomain {
   host_aliases => [$::hostname],
   ip => $::ipaddress,
   tag => 'classroom',
+  }
 }
 
 node master.localdomain {
